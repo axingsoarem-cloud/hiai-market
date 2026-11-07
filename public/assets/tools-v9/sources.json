@@ -1,0 +1,114 @@
+{
+  "verifiedAt": "2026-11-08",
+  "attribution": "Brand marks belong to their owners. MIT library license is not trademark endorsement.",
+  "assets": [
+    {
+      "id": "kiro",
+      "file": "assets/tools-v9/kiro.svg",
+      "sourceUrl": "https://unpkg.com/@lobehub/icons-static-svg@1.102.0/icons/kiro-color.svg",
+      "license": "MIT",
+      "package": "@lobehub/icons-static-svg@1.102.0",
+      "bytes": 960,
+      "sha256": "4eae4d6e818da7342c32c7d443ab7c97b93c544db9af379d5b5bf7f0a3127d66"
+    },
+    {
+      "id": "claude-code",
+      "file": "assets/tools-v9/claude-code.svg",
+      "sourceUrl": "https://unpkg.com/@lobehub/icons-static-svg@1.102.0/icons/claudecode-color.svg",
+      "license": "MIT",
+      "package": "@lobehub/icons-static-svg@1.102.0",
+      "bytes": 424,
+      "sha256": "670b3d8d749d0815ad8f7e62a59d51cb5e2053cb19403f3541a8aed7036a877f"
+    },
+    {
+      "id": "chatgpt",
+      "file": "assets/tools-v9/chatgpt.svg",
+      "sourceUrl": "https://unpkg.com/@lobehub/icons-static-svg@1.102.0/icons/openai.svg",
+      "license": "MIT",
+      "package": "@lobehub/icons-static-svg@1.102.0",
+      "bytes": 1687,
+      "sha256": "a595df6b423920c67a7f8f73c063e4bfb72d415948097b6cac063a2366bb5186"
+    },
+    {
+      "id": "claude",
+      "file": "assets/tools-v9/claude.svg",
+      "sourceUrl": "https://unpkg.com/@lobehub/icons-static-svg@1.102.0/icons/claude-color.svg",
+      "license": "MIT",
+      "package": "@lobehub/icons-static-svg@1.102.0",
+      "bytes": 1696,
+      "sha256": "a3101f3047a119aa11825ad9369510f0c472428c8c52d420e31bc62db44a8364"
+    },
+    {
+      "id": "gemini",
+      "file": "assets/tools-v9/gemini.svg",
+      "sourceUrl": "https://unpkg.com/@lobehub/icons-static-svg@1.102.0/icons/gemini-color.svg",
+      "license": "MIT",
+      "package": "@lobehub/icons-static-svg@1.102.0",
+      "bytes": 2836,
+      "sha256": "8ab0a9bafec11f7e69bcb9fc4ffd8f1bc927d1ddcbbb6ff36dee5ae8b5a9d602"
+    },
+    {
+      "id": "midjourney",
+      "file": "assets/tools-v9/midjourney.svg",
+      "sourceUrl": "https://unpkg.com/@lobehub/icons-static-svg@1.102.0/icons/midjourney.svg",
+      "license": "MIT",
+      "package": "@lobehub/icons-static-svg@1.102.0",
+      "bytes": 4012,
+      "sha256": "e09640ccbf6f643b4624e540f198cd704a6bf3d75dc43b0938628caf4e98c30b"
+    },
+    {
+      "id": "figma",
+      "file": "assets/tools-v9/figma.svg",
+      "sourceUrl": "https://unpkg.com/@lobehub/icons-static-svg@1.102.0/icons/figma-color.svg",
+      "license": "MIT",
+      "package": "@lobehub/icons-static-svg@1.102.0",
+      "bytes": 476,
+      "sha256": "526eea0bdd16f60ca9251fd371a09a3211762a8c41e15ef085d351c2b0078c3b"
+    },
+    {
+      "id": "lovable",
+      "file": "assets/tools-v9/lovable.svg",
+      "sourceUrl": "https://unpkg.com/@lobehub/icons-static-svg@1.102.0/icons/lovable-color.svg",
+      "license": "MIT",
+      "package": "@lobehub/icons-static-svg@1.102.0",
+      "bytes": 801,
+      "sha256": "ab3b36b92ef69561b00f963eb3edaef9afdd598d67424991d74157419cd1d44e"
+    },
+    {
+      "id": "v0",
+      "file": "assets/tools-v9/v0.svg",
+      "sourceUrl": "https://unpkg.com/@lobehub/icons-static-svg@1.102.0/icons/v0.svg",
+      "license": "MIT",
+      "package": "@lobehub/icons-static-svg@1.102.0",
+      "bytes": 555,
+      "sha256": "fc253b71563a3a4db26ebc5a7b5402b30fb52d3f1f600025381e4f734ef1a2c3"
+    },
+    {
+      "id": "elevenlabs",
+      "file": "assets/tools-v9/elevenlabs.svg",
+      "sourceUrl": "https://unpkg.com/@lobehub/icons-static-svg@1.102.0/icons/elevenlabs.svg",
+      "license": "MIT",
+      "package": "@lobehub/icons-static-svg@1.102.0",
+      "bytes": 236,
+      "sha256": "152a4a89fd5228924b6ccc91a72675966df35e3b69d1cf93a67b6866cf846584"
+    },
+    {
+      "id": "bolt",
+      "file": null,
+      "status": "name_fallback",
+      "reason": "No confirmed corresponding icon in fixed package; no logo fabricated."
+    },
+    {
+      "id": "napkin",
+      "file": null,
+      "status": "name_fallback",
+      "reason": "No confirmed corresponding icon in fixed package; no logo fabricated."
+    }
+  ],
+  "validation": {
+    "newLogos": 10,
+    "totalCatalogLogos": 21,
+    "safeSvg": true,
+    "hashesMatch": true
+  }
+}

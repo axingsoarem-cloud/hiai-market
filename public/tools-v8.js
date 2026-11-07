@@ -1,5 +1,22 @@
-/* HiAi 编辑精选顺序，不代表全球官方排名。来源：docs/delivery/hiai-market-20261104/v8-tool-sources.md */
+/* HiAi热门精选为编辑展示顺序，不代表全球统计排名。 */
 window.HIAI_TOOLS = [
+  {
+    "id": "kiro",
+    "name": "Kiro",
+    "category": "code",
+    "description": "结合规格、上下文与 Agent 工作流，辅助规划、开发和验证工程任务。",
+    "logo": "assets/tools-v9/kiro.svg",
+    "officialUrl": "https://kiro.dev/",
+    "accessUrl": "https://kiro.dev/downloads/",
+    "accessLabel": "官方下载",
+    "communityUrl": "https://kiro.dev/community/",
+    "guideUrl": "https://kiro.dev/docs/",
+    "rank": 1,
+    "rankBasis": "HiAi热门精选",
+    "verifiedAt": "2026-11-08",
+    "platforms": "macOS / Windows / Linux / CLI；移动端申请早期访问",
+    "popularityNote": "依据官方产品资料收录为常用场景候选；编辑精选顺序，不代表统计热度或全球排名。"
+  },
   {
     "id": "cursor",
     "name": "Cursor",
@@ -11,10 +28,11 @@ window.HIAI_TOOLS = [
     "accessLabel": "官方下载",
     "communityUrl": "https://forum.cursor.com/",
     "guideUrl": "https://cursor.com/download",
-    "rank": 1,
-    "rankBasis": "HiAi编辑精选",
+    "rank": 2,
+    "rankBasis": "HiAi热门精选",
     "verifiedAt": "2026-11-08",
-    "platforms": "macOS / Windows / Linux"
+    "platforms": "macOS / Windows / Linux",
+    "popularityNote": "保留已核实主流工具目录；编辑精选顺序，不代表统计热度或全球排名。"
   },
   {
     "id": "github-copilot",
@@ -27,10 +45,11 @@ window.HIAI_TOOLS = [
     "accessLabel": "安装 / 设置扩展",
     "communityUrl": "https://github.com/orgs/community/discussions",
     "guideUrl": "https://docs.github.com/en/copilot/how-tos/copilot-in-your-ide/set-up-copilot/install-copilot-extension",
-    "rank": 2,
-    "rankBasis": "HiAi编辑精选",
+    "rank": 3,
+    "rankBasis": "HiAi热门精选",
     "verifiedAt": "2026-11-08",
-    "platforms": "Web / IDE 扩展"
+    "platforms": "Web / IDE 扩展",
+    "popularityNote": "保留已核实主流工具目录；编辑精选顺序，不代表统计热度或全球排名。"
   },
   {
     "id": "devin",
@@ -43,11 +62,12 @@ window.HIAI_TOOLS = [
     "accessLabel": "官方下载",
     "communityUrl": null,
     "guideUrl": "https://docs.devin.ai/get-started/devin-intro",
-    "rank": 3,
-    "rankBasis": "HiAi编辑精选",
+    "rank": 4,
+    "rankBasis": "HiAi热门精选",
     "verifiedAt": "2026-11-08",
     "platforms": "Web / macOS / Windows / Linux",
-    "communityNote": "公开官方社区未核实，提供官方学习文档。"
+    "communityNote": "公开官方社区未核实，提供官方学习文档。",
+    "popularityNote": "保留已核实主流工具目录；编辑精选顺序，不代表统计热度或全球排名。"
   },
   {
     "id": "replit",
@@ -60,10 +80,11 @@ window.HIAI_TOOLS = [
     "accessLabel": "官方移动应用",
     "communityUrl": "https://replit.com/community",
     "guideUrl": "https://replit.com/products/mobile",
-    "rank": 4,
-    "rankBasis": "HiAi编辑精选",
+    "rank": 5,
+    "rankBasis": "HiAi热门精选",
     "verifiedAt": "2026-11-08",
-    "platforms": "Web / iOS / Android"
+    "platforms": "Web / iOS / Android",
+    "popularityNote": "保留已核实主流工具目录；编辑精选顺序，不代表统计热度或全球排名。"
   },
   {
     "id": "notion-ai",
@@ -76,10 +97,11 @@ window.HIAI_TOOLS = [
     "accessLabel": "下载 Notion 应用",
     "communityUrl": "https://www.notion.com/community",
     "guideUrl": "https://www.notion.com/product/ai",
-    "rank": 5,
-    "rankBasis": "HiAi编辑精选",
+    "rank": 6,
+    "rankBasis": "HiAi热门精选",
     "verifiedAt": "2026-11-08",
-    "platforms": "Web / 桌面 / 移动"
+    "platforms": "Web / 桌面 / 移动",
+    "popularityNote": "保留已核实主流工具目录；编辑精选顺序，不代表统计热度或全球排名。"
   },
   {
     "id": "gamma",
@@ -92,11 +114,12 @@ window.HIAI_TOOLS = [
     "accessLabel": "在线使用",
     "communityUrl": "https://gamma.app/community",
     "guideUrl": "https://help.gamma.app/en/articles/11016450-does-gamma-have-a-mobile-app",
-    "rank": 6,
-    "rankBasis": "HiAi编辑精选",
+    "rank": 7,
+    "rankBasis": "HiAi热门精选",
     "verifiedAt": "2026-11-08",
     "platforms": "Web / iOS、Android（美加早期访问）",
-    "accessNote": "桌面使用 Web；移动应用为美加早期访问，无原生 Mac/Windows 桌面 App。"
+    "accessNote": "桌面使用 Web；移动应用为美加早期访问，无原生 Mac/Windows 桌面 App。",
+    "popularityNote": "保留已核实主流工具目录；编辑精选顺序，不代表统计热度或全球排名。"
   },
   {
     "id": "perplexity",
@@ -109,11 +132,12 @@ window.HIAI_TOOLS = [
     "accessLabel": "在线使用",
     "communityUrl": "https://community.perplexity.ai/",
     "guideUrl": "https://www.perplexity.ai/hub",
-    "rank": 7,
-    "rankBasis": "HiAi编辑精选",
+    "rank": 8,
+    "rankBasis": "HiAi热门精选",
     "verifiedAt": "2026-11-08",
     "platforms": "Web / iOS / Android",
-    "communityNote": "该入口是 Perplexity 官方 API 开发者论坛。"
+    "communityNote": "该入口是 Perplexity 官方 API 开发者论坛。",
+    "popularityNote": "保留已核实主流工具目录；编辑精选顺序，不代表统计热度或全球排名。"
   },
   {
     "id": "canva",
@@ -126,10 +150,11 @@ window.HIAI_TOOLS = [
     "accessLabel": "官方下载",
     "communityUrl": "https://www.canva.com/community/",
     "guideUrl": "https://www.canva.com/download/",
-    "rank": 8,
-    "rankBasis": "HiAi编辑精选",
+    "rank": 9,
+    "rankBasis": "HiAi热门精选",
     "verifiedAt": "2026-11-08",
-    "platforms": "Web / macOS / Windows / iOS / Android"
+    "platforms": "Web / macOS / Windows / iOS / Android",
+    "popularityNote": "保留已核实主流工具目录；编辑精选顺序，不代表统计热度或全球排名。"
   },
   {
     "id": "adobe-firefly",
@@ -142,10 +167,11 @@ window.HIAI_TOOLS = [
     "accessLabel": "官方移动应用",
     "communityUrl": "https://community.adobe.com/p/firefly",
     "guideUrl": "https://helpx.adobe.com/firefly/mobile/get-set-up/access-the-app/access-adobe-firefly.html",
-    "rank": 9,
-    "rankBasis": "HiAi编辑精选",
+    "rank": 10,
+    "rankBasis": "HiAi热门精选",
     "verifiedAt": "2026-11-08",
-    "platforms": "Web / 移动应用"
+    "platforms": "Web / 移动应用",
+    "popularityNote": "保留已核实主流工具目录；编辑精选顺序，不代表统计热度或全球排名。"
   },
   {
     "id": "runway",
@@ -158,10 +184,11 @@ window.HIAI_TOOLS = [
     "accessLabel": "在线使用",
     "communityUrl": "https://help.runwayml.com/hc/en-us/articles/37464713358099-Runway-Resources",
     "guideUrl": "https://help.runwayml.com/hc/en-us/articles/37425232841875-Getting-Started-with-Generative-Video",
-    "rank": 10,
-    "rankBasis": "HiAi编辑精选",
+    "rank": 11,
+    "rankBasis": "HiAi热门精选",
     "verifiedAt": "2026-11-08",
-    "platforms": "Web / iOS / Android"
+    "platforms": "Web / iOS / Android",
+    "popularityNote": "保留已核实主流工具目录；编辑精选顺序，不代表统计热度或全球排名。"
   },
   {
     "id": "dify",
@@ -174,10 +201,11 @@ window.HIAI_TOOLS = [
     "accessLabel": "自部署指南",
     "communityUrl": "https://github.com/langgenius/dify/discussions",
     "guideUrl": "https://docs.dify.ai/en/self-host/deploy/quick-start/docker-compose",
-    "rank": 11,
-    "rankBasis": "HiAi编辑精选",
+    "rank": 12,
+    "rankBasis": "HiAi热门精选",
     "verifiedAt": "2026-11-08",
-    "platforms": "Web / Docker 自部署"
+    "platforms": "Web / Docker 自部署",
+    "popularityNote": "保留已核实主流工具目录；编辑精选顺序，不代表统计热度或全球排名。"
   },
   {
     "id": "n8n",
@@ -190,10 +218,197 @@ window.HIAI_TOOLS = [
     "accessLabel": "自部署指南",
     "communityUrl": "https://community.n8n.io/",
     "guideUrl": "https://docs.n8n.io/deploy/host-n8n.md",
-    "rank": 12,
-    "rankBasis": "HiAi编辑精选",
+    "rank": 13,
+    "rankBasis": "HiAi热门精选",
     "verifiedAt": "2026-11-08",
-    "platforms": "Web / Docker、npm 自部署"
+    "platforms": "Web / Docker、npm 自部署",
+    "popularityNote": "保留已核实主流工具目录；编辑精选顺序，不代表统计热度或全球排名。"
+  },
+  {
+    "id": "claude-code",
+    "name": "Claude Code",
+    "category": "code",
+    "description": "在终端、IDE或Web中处理代码修改、测试和工程任务。",
+    "logo": "assets/tools-v9/claude-code.svg",
+    "officialUrl": "https://claude.com/product/claude-code",
+    "accessUrl": "https://code.claude.com/docs/en/overview",
+    "accessLabel": "官方安装指南",
+    "communityUrl": null,
+    "guideUrl": "https://code.claude.com/docs/en/overview",
+    "rank": 14,
+    "rankBasis": "HiAi热门精选",
+    "verifiedAt": "2026-11-08",
+    "platforms": "macOS / Windows / Linux / IDE / Web",
+    "popularityNote": "依据官方产品资料收录为常用场景候选；编辑精选顺序，不代表统计热度或全球排名。"
+  },
+  {
+    "id": "chatgpt",
+    "name": "ChatGPT",
+    "category": "assistant",
+    "description": "用于对话、写作、研究和多种日常工作任务的通用AI助手。",
+    "logo": "assets/tools-v9/chatgpt.svg",
+    "officialUrl": "https://chatgpt.com/",
+    "accessUrl": "https://chatgpt.com/download/",
+    "accessLabel": "官方下载",
+    "communityUrl": null,
+    "guideUrl": "https://chatgpt.com/download/",
+    "rank": 15,
+    "rankBasis": "HiAi热门精选",
+    "verifiedAt": "2026-11-08",
+    "platforms": "Web / macOS / Windows / iOS / Android",
+    "popularityNote": "依据官方产品资料收录为常用场景候选；编辑精选顺序，不代表统计热度或全球排名。"
+  },
+  {
+    "id": "claude",
+    "name": "Claude",
+    "category": "assistant",
+    "description": "支持写作、分析与工作资料协作的通用AI助手。",
+    "logo": "assets/tools-v9/claude.svg",
+    "officialUrl": "https://claude.com/",
+    "accessUrl": "https://claude.com/download",
+    "accessLabel": "官方下载",
+    "communityUrl": null,
+    "guideUrl": "https://claude.com/download",
+    "rank": 16,
+    "rankBasis": "HiAi热门精选",
+    "verifiedAt": "2026-11-08",
+    "platforms": "Web / 桌面 / 移动",
+    "popularityNote": "依据官方产品资料收录为常用场景候选；编辑精选顺序，不代表统计热度或全球排名。"
+  },
+  {
+    "id": "gemini",
+    "name": "Gemini",
+    "category": "assistant",
+    "description": "Google的通用AI助手，可围绕文本、图像等信息开展交流与创作。",
+    "logo": "assets/tools-v9/gemini.svg",
+    "officialUrl": "https://gemini.google/overview/",
+    "accessUrl": "https://gemini.google.com/",
+    "accessLabel": "在线使用",
+    "communityUrl": null,
+    "guideUrl": "https://gemini.google/overview/",
+    "rank": 17,
+    "rankBasis": "HiAi热门精选",
+    "verifiedAt": "2026-11-08",
+    "platforms": "Web / 移动应用",
+    "popularityNote": "依据官方产品资料收录为常用场景候选；编辑精选顺序，不代表统计热度或全球排名。"
+  },
+  {
+    "id": "midjourney",
+    "name": "Midjourney",
+    "category": "creative",
+    "description": "通过提示与视觉参考进行AI图像创作，适合概念和视觉探索。",
+    "logo": "assets/tools-v9/midjourney.svg",
+    "officialUrl": "https://www.midjourney.com/",
+    "accessUrl": "https://www.midjourney.com/",
+    "accessLabel": "在线使用",
+    "communityUrl": null,
+    "guideUrl": "https://docs.midjourney.com/",
+    "rank": 18,
+    "rankBasis": "HiAi热门精选",
+    "verifiedAt": "2026-11-08",
+    "platforms": "Web",
+    "popularityNote": "依据官方产品资料收录为常用场景候选；编辑精选顺序，不代表统计热度或全球排名。"
+  },
+  {
+    "id": "figma",
+    "name": "Figma",
+    "category": "creative",
+    "description": "协作设计与产品创作平台，结合AI辅助探索界面和交互。",
+    "logo": "assets/tools-v9/figma.svg",
+    "officialUrl": "https://www.figma.com/",
+    "accessUrl": "https://www.figma.com/downloads/",
+    "accessLabel": "官方下载",
+    "communityUrl": null,
+    "guideUrl": "https://www.figma.com/downloads/",
+    "rank": 19,
+    "rankBasis": "HiAi热门精选",
+    "verifiedAt": "2026-11-08",
+    "platforms": "Web / macOS / Windows / 移动",
+    "popularityNote": "依据官方产品资料收录为常用场景候选；编辑精选顺序，不代表统计热度或全球排名。"
+  },
+  {
+    "id": "lovable",
+    "name": "Lovable",
+    "category": "code",
+    "description": "通过自然语言创建和迭代Web应用，适合产品原型与业务工具。",
+    "logo": "assets/tools-v9/lovable.svg",
+    "officialUrl": "https://lovable.dev/",
+    "accessUrl": "https://lovable.dev/",
+    "accessLabel": "在线使用",
+    "communityUrl": null,
+    "guideUrl": "https://lovable.dev/",
+    "rank": 20,
+    "rankBasis": "HiAi热门精选",
+    "verifiedAt": "2026-11-08",
+    "platforms": "Web",
+    "popularityNote": "依据官方产品资料收录为常用场景候选；编辑精选顺序，不代表统计热度或全球排名。"
+  },
+  {
+    "id": "v0",
+    "name": "v0",
+    "category": "code",
+    "description": "Vercel的AI应用构建工具，辅助生成界面与完整Web应用。",
+    "logo": "assets/tools-v9/v0.svg",
+    "officialUrl": "https://v0.app/",
+    "accessUrl": "https://v0.app/",
+    "accessLabel": "在线使用",
+    "communityUrl": null,
+    "guideUrl": "https://v0.app/",
+    "rank": 21,
+    "rankBasis": "HiAi热门精选",
+    "verifiedAt": "2026-11-08",
+    "platforms": "Web / iOS",
+    "popularityNote": "依据官方产品资料收录为常用场景候选；编辑精选顺序，不代表统计热度或全球排名。"
+  },
+  {
+    "id": "bolt",
+    "name": "Bolt",
+    "category": "code",
+    "description": "在浏览器中通过对话创建网站、应用和原型。",
+    "logo": null,
+    "officialUrl": "https://bolt.new/",
+    "accessUrl": "https://bolt.new/",
+    "accessLabel": "在线使用",
+    "communityUrl": null,
+    "guideUrl": "https://bolt.new/",
+    "rank": 22,
+    "rankBasis": "HiAi热门精选",
+    "verifiedAt": "2026-11-08",
+    "platforms": "Web",
+    "popularityNote": "依据官方产品资料收录为常用场景候选；编辑精选顺序，不代表统计热度或全球排名。"
+  },
+  {
+    "id": "napkin",
+    "name": "Napkin AI",
+    "category": "office",
+    "description": "将文本和想法转成图表、流程图与视觉表达。",
+    "logo": null,
+    "officialUrl": "https://www.napkin.ai/",
+    "accessUrl": "https://app.napkin.ai/",
+    "accessLabel": "在线使用",
+    "communityUrl": null,
+    "guideUrl": "https://www.napkin.ai/",
+    "rank": 23,
+    "rankBasis": "HiAi热门精选",
+    "verifiedAt": "2026-11-08",
+    "platforms": "Web",
+    "popularityNote": "依据官方产品资料收录为常用场景候选；编辑精选顺序，不代表统计热度或全球排名。"
+  },
+  {
+    "id": "elevenlabs",
+    "name": "ElevenLabs",
+    "category": "creative",
+    "description": "面向语音生成、音频创作和语音Agent的工具平台。",
+    "logo": "assets/tools-v9/elevenlabs.svg",
+    "officialUrl": "https://elevenlabs.io/",
+    "accessUrl": "https://elevenlabs.io/",
+    "accessLabel": "在线使用",
+    "communityUrl": null,
+    "guideUrl": "https://elevenlabs.io/",
+    "rank": 24,
+    "rankBasis": "HiAi热门精选",
+    "verifiedAt": "2026-11-08",
+    "platforms": "Web",
+    "popularityNote": "依据官方产品资料收录为常用场景候选；编辑精选顺序，不代表统计热度或全球排名。"
   }
 ];
-

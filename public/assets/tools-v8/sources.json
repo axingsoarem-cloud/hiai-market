@@ -1,0 +1,176 @@
+{
+  "verifiedAt": "2026-11-08",
+  "assets": [
+    {
+      "id": "cursor",
+      "file": "assets/tools-v8/cursor.svg",
+      "sourceUrl": "https://unpkg.com/@lobehub/icons-static-svg@1.102.0/icons/cursor.svg",
+      "license": "MIT",
+      "package": "@lobehub/icons-static-svg@1.102.0",
+      "bytes": 547,
+      "sha256": "0cb51bddf264ae108926fd554c063ef40fc1aac3c5c921ddb39ad184e4e5d0ef",
+      "tags": [
+        "svg",
+        "title",
+        "path"
+      ]
+    },
+    {
+      "id": "github-copilot",
+      "file": "assets/tools-v8/github-copilot.svg",
+      "sourceUrl": "https://unpkg.com/@lobehub/icons-static-svg@1.102.0/icons/githubcopilot.svg",
+      "license": "MIT",
+      "package": "@lobehub/icons-static-svg@1.102.0",
+      "bytes": 2019,
+      "sha256": "bbc7fddc13448236e5edea8c399d2072dc40aa5da5bca07f7a2f412405c500a3",
+      "tags": [
+        "svg",
+        "title",
+        "path"
+      ]
+    },
+    {
+      "id": "devin",
+      "file": "assets/tools-v8/devin.svg",
+      "sourceUrl": "https://unpkg.com/@lobehub/icons-static-svg@1.102.0/icons/devin-color.svg",
+      "license": "MIT",
+      "package": "@lobehub/icons-static-svg@1.102.0",
+      "bytes": 3307,
+      "sha256": "beb58575f94fda57a6c1f9ed5624e6407bff405f55b6258b53032b674aadd8c8",
+      "tags": [
+        "svg",
+        "title",
+        "path"
+      ]
+    },
+    {
+      "id": "replit",
+      "file": "assets/tools-v8/replit.svg",
+      "sourceUrl": "https://unpkg.com/@lobehub/icons-static-svg@1.102.0/icons/replit-color.svg",
+      "license": "MIT",
+      "package": "@lobehub/icons-static-svg@1.102.0",
+      "bytes": 506,
+      "sha256": "7d803ffdfc0d46aec134f656fd3c8815ee936a6726295eea5173d7122007eae5",
+      "tags": [
+        "svg",
+        "title",
+        "path"
+      ]
+    },
+    {
+      "id": "notion-ai",
+      "file": "assets/tools-v8/notion-ai.svg",
+      "sourceUrl": "https://unpkg.com/@lobehub/icons-static-svg@1.102.0/icons/notion.svg",
+      "license": "MIT",
+      "package": "@lobehub/icons-static-svg@1.102.0",
+      "bytes": 1139,
+      "sha256": "8ada8628489d6e2900ebf21d3643fe5d4566d0e59aba95a3df15b710caa00743",
+      "tags": [
+        "svg",
+        "title",
+        "path"
+      ]
+    },
+    {
+      "id": "perplexity",
+      "file": "assets/tools-v8/perplexity.svg",
+      "sourceUrl": "https://unpkg.com/@lobehub/icons-static-svg@1.102.0/icons/perplexity-color.svg",
+      "license": "MIT",
+      "package": "@lobehub/icons-static-svg@1.102.0",
+      "bytes": 603,
+      "sha256": "8353f3ab20822f1a933224b0ea32cc39f0c32d5740f4af8c254b0f418e0a3a70",
+      "tags": [
+        "svg",
+        "title",
+        "path"
+      ]
+    },
+    {
+      "id": "adobe-firefly",
+      "file": "assets/tools-v8/adobe-firefly.svg",
+      "sourceUrl": "https://unpkg.com/@lobehub/icons-static-svg@1.102.0/icons/adobefirefly-color.svg",
+      "license": "MIT",
+      "package": "@lobehub/icons-static-svg@1.102.0",
+      "bytes": 20983,
+      "sha256": "309ffee404f63e1076c2b20623b52199498139f0d18276945c965c53c1abdd00",
+      "tags": [
+        "svg",
+        "title",
+        "path"
+      ]
+    },
+    {
+      "id": "runway",
+      "file": "assets/tools-v8/runway.svg",
+      "sourceUrl": "https://unpkg.com/@lobehub/icons-static-svg@1.102.0/icons/runway.svg",
+      "license": "MIT",
+      "package": "@lobehub/icons-static-svg@1.102.0",
+      "bytes": 752,
+      "sha256": "dba3459264af7b4fffb5c4bfc909748e1ec1f122ffcaf0a8fbb626781888eaf2",
+      "tags": [
+        "svg",
+        "title",
+        "path"
+      ]
+    },
+    {
+      "id": "dify",
+      "file": "assets/tools-v8/dify.svg",
+      "sourceUrl": "https://unpkg.com/@lobehub/icons-static-svg@1.102.0/icons/dify-color.svg",
+      "license": "MIT",
+      "package": "@lobehub/icons-static-svg@1.102.0",
+      "bytes": 495,
+      "sha256": "6c1704b6f14eb995d010549847b733dbbc54af66974a2bc62623fbdad4981c66",
+      "tags": [
+        "svg",
+        "title",
+        "path"
+      ]
+    },
+    {
+      "id": "n8n",
+      "file": "assets/tools-v8/n8n.svg",
+      "sourceUrl": "https://unpkg.com/@lobehub/icons-static-svg@1.102.0/icons/n8n-color.svg",
+      "license": "MIT",
+      "package": "@lobehub/icons-static-svg@1.102.0",
+      "bytes": 1415,
+      "sha256": "057fc9acfc04cecffd8ca7fe3cf7cb3a48c0ba972a56a5c23f4389b3d612b689",
+      "tags": [
+        "svg",
+        "title",
+        "path"
+      ]
+    },
+    {
+      "id": "canva",
+      "file": "assets/tools-v8/canva.svg",
+      "sourceUrl": "https://github.com/pheralb/svgl/blob/ad54bbb2800ee0d5395118634247ee191b26a36a/static/library/canva.svg",
+      "retrievalUrl": "https://api.github.com/repos/pheralb/svgl/git/blobs/a0b5e15c667222b45de7724427f0404e26b94000",
+      "license": "MIT",
+      "licenseFile": "assets/tools-v8/SVGL-LICENSE.txt",
+      "revision": "ad54bbb2800ee0d5395118634247ee191b26a36a",
+      "bytes": 2887,
+      "sha256": "242bb82ed2be97ce4213a3197bbeee558c49d268552372a85b5b9b40bf73b049"
+    },
+    {
+      "id": "gamma",
+      "file": null,
+      "status": "name_fallback",
+      "sourceUrl": "https://brand.gamma.app/",
+      "attemptedAssetUrl": "https://cdn.gamma.app/gdwwhyewwldwc8z/ff57eea3ac52433da7a45305b3232554/original/Group-1713657894.png",
+      "error": "apiRequestContext.get: Timeout 20000ms exceeded.",
+      "note": "Official CDN unavailable through Node, curl and Edge request; no substitute logo fabricated. Name fallback accepted."
+    }
+  ],
+  "attribution": "Brand marks remain property of their owners; library MIT licenses do not imply endorsement or trademark authorization.",
+  "validation": {
+    "records": 12,
+    "realLogos": 11,
+    "nameFallback": [
+      "gamma"
+    ],
+    "schema": true,
+    "svgNoScriptOrExternalReferences": true,
+    "hashesMatch": true
+  }
+}

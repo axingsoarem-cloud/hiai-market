@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-07T10:30:33.492Z",
+  "checkedAt": "2026-11-07T11:10:22.583Z",
   "status": "partial",
   "schedule": "每天北京时间09:00（UTC 01:00）",
   "sources": [
@@ -20,19 +20,19 @@
     {
       "id": "anthropic",
       "status": "failed",
-      "error": "REDIRECT_HOST_CHANGED",
+      "error": "TABLE_HEADER_MISSING",
       "sourceUrl": "https://platform.claude.com/docs/en/about-claude/pricing"
     },
     {
       "id": "openai",
       "status": "failed",
-      "error": "HTTP_403",
+      "error": "SECTION_MISSING",
       "sourceUrl": "https://developers.openai.com/api/docs/pricing"
     },
     {
       "id": "xai",
       "status": "failed",
-      "error": "fetch failed",
+      "error": "HTTP_404",
       "sourceUrl": "https://docs.x.ai/developers/models"
     }
   ],

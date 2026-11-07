@@ -1,0 +1,113 @@
+{
+  "checkedAt": "2026-11-07T10:30:33.492Z",
+  "status": "partial",
+  "schedule": "每天北京时间09:00（UTC 01:00）",
+  "sources": [
+    {
+      "id": "deepseek",
+      "status": "ok",
+      "models": 1,
+      "sourceUrl": "https://api-docs.deepseek.com/quick_start/pricing/",
+      "evidenceHash": "af6679690eb9a7838c47727bfc5ffdc4ac91c4445a0c1219741ffe00c076ece5"
+    },
+    {
+      "id": "zai",
+      "status": "ok",
+      "models": 1,
+      "sourceUrl": "https://docs.z.ai/guides/overview/pricing",
+      "evidenceHash": "4ee3a3e9eab6eab9d8a06309fe6984d82db7351586786bb8422deee1f16f78bf"
+    },
+    {
+      "id": "anthropic",
+      "status": "failed",
+      "error": "REDIRECT_HOST_CHANGED",
+      "sourceUrl": "https://platform.claude.com/docs/en/about-claude/pricing"
+    },
+    {
+      "id": "openai",
+      "status": "failed",
+      "error": "HTTP_403",
+      "sourceUrl": "https://developers.openai.com/api/docs/pricing"
+    },
+    {
+      "id": "xai",
+      "status": "failed",
+      "error": "fetch failed",
+      "sourceUrl": "https://docs.x.ai/developers/models"
+    }
+  ],
+  "updatedModels": [
+    "deepseek/deepseek-v4.1-flash-1017",
+    "z-ai/glm-5.3-flashx-legal"
+  ],
+  "retainedModels": [
+    "openai/gpt-6.1-terra",
+    "openai/gpt-6-luna",
+    "anthropic/claude-opus-5.5",
+    "anthropic/claude-haiku-4.5",
+    "x-ai/grok-4.7"
+  ],
+  "uncoveredModels": [
+    "deepseek/deepseek-chat-v3-0324",
+    "tencent/hy4",
+    "z-ai/glm-5v-turbo",
+    "z-ai/glm-5-turbo",
+    "openai/gpt-6.1-terra-pro",
+    "openai/gpt-6-sol-pro",
+    "minimax/minimax-m3.1-flash",
+    "minimax/minimax-m2.7",
+    "moonshotai/kimi-k3.1-pro",
+    "moonshotai/kimi-k3",
+    "moonshotai/kimi-k2-thinking",
+    "google/gemini-omni-1.2-flash",
+    "google/gemini-omni-1.1-flash",
+    "google/gemini-3.5-flash-lite",
+    "google/gemini-2.5-flash-image",
+    "qwen/qwen3.6-plus",
+    "qwen/qwen3-vl-8b-instruct",
+    "qwen/qwen3-vl-30b-a3b-thinking",
+    "qwen/qwen3-vl-30b-a3b-instruct",
+    "x-ai/grok-4.20-multi-agent",
+    "x-ai/grok-4.20",
+    "xiaomi/mimo-v2.6-pro-ultraspeed",
+    "xiaomi/mimo-v2.6-flash",
+    "xiaomi/mimo-v2.6-pro",
+    "mistralai/mistral-small-2603",
+    "mistralai/mistral-small-3.1-24b-instruct",
+    "mistralai/mistral-saba",
+    "meta-llama/llama-4-maverick",
+    "meta-llama/llama-4-scout",
+    "google/gemma-4-31b-it:free",
+    "google/gemma-3-4b-it",
+    "google/gemma-3-12b-it",
+    "google/gemma-3-27b-it",
+    "amazon/nova-premier-v1",
+    "perplexity/sonar-pro-search",
+    "perplexity/sonar-reasoning-pro",
+    "perplexity/sonar-pro",
+    "perplexity/sonar-deep-research",
+    "cohere/command-a",
+    "rekaai/reka-edge",
+    "rekaai/reka-flash-3",
+    "liquid/lfm-3-1.7b",
+    "liquid/lfm-3-1.7b:free",
+    "meituan/longcat-2.0",
+    "meta/muse-spark-1.1",
+    "mistralai/voxtral-small-24b-2507",
+    "google/lyria-3-pro-preview",
+    "google/lyria-3-clip-preview",
+    "openai/gpt-oss-safeguard-20b",
+    "thinkingmachines/inkling",
+    "ricursiveai/ripple-65b-preview",
+    "particle-ai/particle-1",
+    "recursive/flint-v1.0:free",
+    "thedrummer/skyfall-36b-v2",
+    "aion-labs/aion-rp-llama-3.1-8b"
+  ],
+  "counts": {
+    "total": 62,
+    "updated": 2,
+    "retained": 5,
+    "unsupported": 55
+  }
+}

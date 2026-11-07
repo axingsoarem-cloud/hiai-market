@@ -1,0 +1,21 @@
+import {readFile} from 'node:fs/promises';
+import path from 'node:path';
+
+const base=(process.env.HIAI_SITE_URL||'https://hiai.oss.baiopen.com').replace(/\/$/,'');
+if(!['https://hiai.oss.baiopen.com','https://hiai-market-review-20261106.workspace-919592.chatgpt.site'].includes(base))throw Error('SITE_ORIGIN_NOT_ALLOWED');
+const token=process.env.HIAI_PRICE_UPDATE_TOKEN;
+if(!token || token.length<32)throw Error('PRICE_WRITER_SECRET_NOT_CONFIGURED');
+const folder=process.argv[2]||'public';
+const catalog=JSON.parse(await readFile(path.join(folder,'catalog-v3.json'),'utf8'));
+const report=JSON.parse(await readFile(path.join(folder,'pricing-update-report.json'),'utf8'));
+const headers={'Content-Type':'application/json',Authorization:'Bearer '+token};
+if(process.env.HIAI_SITE_BYPASS_TOKEN)headers['OAI-Sites-Authorization']='Bearer '+process.env.HIAI_SITE_BYPASS_TOKEN;
+const response=await fetch(base+'/api/prices',{method:'POST',headers,body:JSON.stringify({catalog,report}),redirect:'error',signal:AbortSignal.timeout(30000)});
+if(!response.ok)throw Error('PRICE_PUBLISH_HTTP_'+response.status);
+const receipt=await response.json();
+const readHeaders={};if(process.env.HIAI_SITE_BYPASS_TOKEN)readHeaders['OAI-Sites-Authorization']='Bearer '+process.env.HIAI_SITE_BYPASS_TOKEN;
+const readback=await fetch(base+'/api/price-status',{headers:readHeaders,redirect:'error',signal:AbortSignal.timeout(30000)});
+if(!readback.ok)throw Error('PRICE_READBACK_HTTP_'+readback.status);
+const status=await readback.json();
+if(status.checkedAt!==report.checkedAt)throw Error('PRICE_READBACK_TIME_MISMATCH');
+console.log(JSON.stringify({published:true,checkedAt:status.checkedAt,sourceStatus:report.status,receipt}));

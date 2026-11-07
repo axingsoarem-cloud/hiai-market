@@ -1,0 +1,85 @@
+{
+  "verifiedAt": "2026-11-07T10:30:05.368Z",
+  "method": "Official pages manually read with browsing tool; no inferred model aliases.",
+  "seeds": {
+    "anthropic/claude-opus-5.5": [
+      4,
+      20,
+      "https://platform.claude.com/docs/en/about-claude/pricing",
+      "Standard；Global"
+    ],
+    "anthropic/claude-haiku-4.5": [
+      1,
+      5,
+      "https://platform.claude.com/docs/en/about-claude/pricing",
+      "Standard；Global"
+    ],
+    "openai/gpt-6.1-terra": [
+      1,
+      5,
+      "https://developers.openai.com/api/docs/pricing",
+      "Standard；Short context（以官方档位定义为准）"
+    ],
+    "openai/gpt-6-luna": [
+      0.1,
+      0.5,
+      "https://developers.openai.com/api/docs/pricing",
+      "Standard；Short context（以官方档位定义为准）"
+    ],
+    "x-ai/grok-4.7": [
+      2,
+      6,
+      "https://docs.x.ai/developers/models",
+      "Standard"
+    ],
+    "minimax/minimax-m2.7": [
+      0.3,
+      1.2,
+      "https://platform.minimax.io/subscribe/token-plan?tab=api-enterprise",
+      "Standard"
+    ]
+  },
+  "portals": {
+    "gpt": [
+      "https://platform.openai.com/playground",
+      "https://developers.openai.com/api/docs/pricing"
+    ],
+    "claude": [
+      "https://platform.claude.com/playground",
+      "https://platform.claude.com/docs/en/about-claude/pricing"
+    ],
+    "kimi": [
+      "https://www.kimi.com/",
+      "https://platform.kimi.ai/docs/pricing/chat"
+    ],
+    "gemini": [
+      "https://aistudio.google.com/",
+      "https://ai.google.dev/gemini-api/docs/pricing"
+    ],
+    "qwen": [
+      "https://chat.qwen.ai/",
+      "https://chat.qwen.ai/"
+    ],
+    "glm": [
+      "https://chat.z.ai/",
+      "https://docs.z.ai/guides/overview/pricing"
+    ],
+    "minimax": [
+      "https://agent.minimax.io/",
+      "https://www.minimax.io/"
+    ],
+    "mistral": [
+      "https://console.mistral.ai/",
+      "https://docs.mistral.ai/models"
+    ],
+    "voxtral": [
+      "https://console.mistral.ai/",
+      "https://docs.mistral.ai/models"
+    ]
+  },
+  "limitations": [
+    "A brand portal does not guarantee availability of each historical version.",
+    "Prices are first-party base rates and not HiAi supplier quotes.",
+    "OpenAI Standard Short-context and DeepSeek peak tiers must remain explicit."
+  ]
+}

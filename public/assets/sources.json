@@ -1,0 +1,50 @@
+[
+  {
+    "brand": "deepseek",
+    "source": "https://www.deepseek.com/favicon.ico",
+    "file": "assets/deepseek.ico",
+    "bytes": 209762
+  },
+  {
+    "brand": "qwen",
+    "source": "https://img.alicdn.com/imgextra/i4/O1CN01OXv3EM1FN8t9W4P79_!!6000000000474-2-tps-80-80.png",
+    "file": "assets/qwen.png",
+    "bytes": 1658
+  },
+  {
+    "brand": "glm",
+    "source": "https://z-cdn.chatglm.cn/z-ai/static/logo.svg",
+    "file": "assets/glm.svg",
+    "bytes": 11037
+  },
+  {
+    "brand": "kimi",
+    "source": "https://www.kimi.com/pwa-192.png",
+    "file": "assets/kimi.png",
+    "bytes": 21645
+  },
+  {
+    "brand": "openai",
+    "source": "https://unpkg.com/@lobehub/icons-static-svg@1.102.0/icons/openai.svg",
+    "file": "assets/openai.svg",
+    "license": "MIT / LobeHub"
+  },
+  {
+    "brand": "claude",
+    "source": "https://unpkg.com/@lobehub/icons-static-svg@1.102.0/icons/claude.svg",
+    "file": "assets/claude.svg",
+    "license": "MIT / LobeHub"
+  },
+  {
+    "brand": "gemini",
+    "source": "https://unpkg.com/@lobehub/icons-static-svg@1.102.0/icons/gemini.svg",
+    "file": "assets/gemini.svg",
+    "license": "MIT / LobeHub"
+  },
+  {
+    "brand": "grok",
+    "source": "https://unpkg.com/@lobehub/icons-static-svg@1.102.0/icons/grok.svg",
+    "file": "assets/grok.svg",
+    "license": "MIT / LobeHub"
+  }
+]

@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "policy": "Exact model ID; first-party USD standard text-token rates only; no inference from provider aliases. Other modalities and tier fees remain separate.",
+  "sources": [
+    {
+      "id": "deepseek",
+      "parser": "deepseek",
+      "fetchUrl": "https://api-docs.deepseek.com/quick_start/pricing/",
+      "sourceUrl": "https://api-docs.deepseek.com/quick_start/pricing/",
+      "models": [
+        {
+          "id": "deepseek/deepseek-v4.1-flash-1017",
+          "label": "DeepSeek-V4.1-Flash-1017"
+        }
+      ],
+      "validation": "live-verified"
+    },
+    {
+      "id": "zai",
+      "parser": "markdown",
+      "fetchUrl": "https://docs.z.ai/guides/overview/pricing.md",
+      "sourceUrl": "https://docs.z.ai/guides/overview/pricing",
+      "start": "### Text Models",
+      "end": "### Built-in Tools",
+      "units": [
+        "Prices per 1M tokens."
+      ],
+      "header": [
+        "Model",
+        "Input",
+        "Cached Input",
+        "Cached Input Storage",
+        "Output"
+      ],
+      "models": [
+        {
+          "id": "z-ai/glm-5.3-flashx-legal",
+          "label": "GLM-5.3-FlashX-Legal"
+        }
+      ],
+      "validation": "live-verified"
+    },
+    {
+      "id": "anthropic",
+      "parser": "markdown",
+      "fetchUrl": "https://platform.claude.com/docs/en/about-claude/pricing.md",
+      "sourceUrl": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "start": "## Model pricing",
+      "end": "## Cloud platform pricing",
+      "units": [
+        "MTok"
+      ],
+      "models": [
+        {
+          "id": "anthropic/claude-opus-5.5",
+          "label": "Claude Opus 5.5"
+        },
+        {
+          "id": "anthropic/claude-haiku-4.5",
+          "label": "Claude Haiku 4.5"
+        }
+      ],
+      "validation": "fixture-only; live fetch region redirect rejected"
+    },
+    {
+      "id": "openai",
+      "parser": "markdown",
+      "fetchUrl": "https://developers.openai.com/api/docs/pricing.md",
+      "sourceUrl": "https://developers.openai.com/api/docs/pricing",
+      "start": "## Flagship models",
+      "end": "All models",
+      "units": [
+        "Prices per 1M tokens."
+      ],
+      "tier": "Standard；Short context（以官方档位定义为准）",
+      "models": [
+        {
+          "id": "openai/gpt-6.1-terra",
+          "label": "gpt-6.1-terra"
+        },
+        {
+          "id": "openai/gpt-6-luna",
+          "label": "gpt-6-luna"
+        }
+      ],
+      "validation": "fixture-only; live fetch HTTP403"
+    },
+    {
+      "id": "xai",
+      "parser": "xai",
+      "fetchUrl": "https://docs.x.ai/developers/models.md",
+      "sourceUrl": "https://docs.x.ai/developers/models",
+      "units": [
+        "1M tokens"
+      ],
+      "models": [
+        {
+          "id": "x-ai/grok-4.7",
+          "label": "grok-4.7"
+        }
+      ],
+      "validation": "fixture-only; live fetch network unavailable"
+    }
+  ]
+}

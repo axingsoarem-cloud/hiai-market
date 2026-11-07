@@ -1,0 +1,174 @@
+{
+  "collectedAt": "2026-11-07",
+  "package": "@lobehub/icons-static-svg@1.102.0",
+  "license": "MIT",
+  "licenseFile": "assets/LOBE-LICENSE.txt",
+  "attribution": "LobeHub icons; brand marks remain the property of their owners.",
+  "assets": [
+    {
+      "name": "hunyuan",
+      "source": "https://unpkg.com/@lobehub/icons-static-svg@1.102.0/icons/hunyuan.svg",
+      "file": "assets/hunyuan.svg",
+      "bytes": 954
+    },
+    {
+      "name": "minimax",
+      "source": "https://unpkg.com/@lobehub/icons-static-svg@1.102.0/icons/minimax.svg",
+      "file": "assets/minimax.svg",
+      "bytes": 1334
+    },
+    {
+      "name": "mistral",
+      "source": "https://unpkg.com/@lobehub/icons-static-svg@1.102.0/icons/mistral.svg",
+      "file": "assets/mistral.svg",
+      "bytes": 418
+    },
+    {
+      "name": "meta",
+      "source": "https://unpkg.com/@lobehub/icons-static-svg@1.102.0/icons/meta.svg",
+      "file": "assets/meta.svg",
+      "bytes": 1735
+    },
+    {
+      "name": "perplexity",
+      "source": "https://unpkg.com/@lobehub/icons-static-svg@1.102.0/icons/perplexity.svg",
+      "file": "assets/perplexity.svg",
+      "bytes": 608
+    },
+    {
+      "name": "cohere",
+      "source": "https://unpkg.com/@lobehub/icons-static-svg@1.102.0/icons/cohere.svg",
+      "file": "assets/cohere.svg",
+      "bytes": 724
+    },
+    {
+      "name": "reka",
+      "source": "https://unpkg.com/@lobehub/icons-static-svg@1.102.0/icons/reka.svg",
+      "file": "assets/reka.svg",
+      "bytes": 2866
+    },
+    {
+      "name": "liquid",
+      "source": "https://unpkg.com/@lobehub/icons-static-svg@1.102.0/icons/liquid.svg",
+      "file": "assets/liquid.svg",
+      "bytes": 524
+    },
+    {
+      "name": "google",
+      "source": "https://unpkg.com/@lobehub/icons-static-svg@1.102.0/icons/google.svg",
+      "file": "assets/google.svg",
+      "bytes": 900
+    },
+    {
+      "name": "xiaomimimo",
+      "source": "https://unpkg.com/@lobehub/icons-static-svg@1.102.0/icons/xiaomimimo.svg",
+      "file": "assets/xiaomimimo.svg",
+      "bytes": 2544
+    },
+    {
+      "name": "aws",
+      "source": "https://unpkg.com/@lobehub/icons-static-svg@1.102.0/icons/aws.svg",
+      "file": "assets/aws.svg",
+      "bytes": 3234
+    },
+    {
+      "name": "longcat",
+      "source": "https://unpkg.com/@lobehub/icons-static-svg@1.102.0/icons/longcat.svg",
+      "file": "assets/longcat.svg",
+      "bytes": 804
+    }
+  ],
+  "familyMapping": [
+    {
+      "family": "hy",
+      "logo": "assets/hunyuan.svg"
+    },
+    {
+      "family": "minimax",
+      "logo": "assets/minimax.svg"
+    },
+    {
+      "family": "mimo",
+      "logo": "assets/xiaomimimo.svg"
+    },
+    {
+      "family": "mistral",
+      "logo": "assets/mistral.svg"
+    },
+    {
+      "family": "llama",
+      "logo": "assets/meta.svg"
+    },
+    {
+      "family": "gemma",
+      "logo": "assets/google.svg"
+    },
+    {
+      "family": "nova",
+      "logo": "assets/aws.svg"
+    },
+    {
+      "family": "sonar",
+      "logo": "assets/perplexity.svg"
+    },
+    {
+      "family": "command",
+      "logo": "assets/cohere.svg"
+    },
+    {
+      "family": "reka",
+      "logo": "assets/reka.svg"
+    },
+    {
+      "family": "lfm",
+      "logo": "assets/liquid.svg"
+    },
+    {
+      "family": "longcat",
+      "logo": "assets/longcat.svg"
+    },
+    {
+      "family": "muse",
+      "logo": "assets/meta.svg"
+    },
+    {
+      "family": "voxtral",
+      "logo": "assets/mistral.svg"
+    },
+    {
+      "family": "lyria",
+      "logo": "assets/google.svg"
+    }
+  ],
+  "remainingFallback": [
+    {
+      "id": "inkling",
+      "family": "Inkling"
+    },
+    {
+      "id": "ripple",
+      "family": "Ripple"
+    },
+    {
+      "id": "particle",
+      "family": "Particle"
+    },
+    {
+      "id": "flint",
+      "family": "Flint"
+    },
+    {
+      "id": "skyfall",
+      "family": "Skyfall"
+    },
+    {
+      "id": "aion",
+      "family": "Aion"
+    }
+  ],
+  "notes": [
+    "Google icon is a brand icon shared by Gemma/Lyria; Meta by Llama/Muse; Mistral by Mistral/Voxtral.",
+    "Models, version modalities, prices and ordering unchanged.",
+    "Unknown startup marks remain text fallback."
+  ]
+}

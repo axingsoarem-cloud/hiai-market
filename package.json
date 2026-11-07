@@ -1,0 +1,13 @@
+{
+  "name": "hiai-market",
+  "version": "0.4.0",
+  "private": true,
+  "type": "module",
+  "description": "HiAi 模型市场评审站及官方参考价格更新器",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test scripts/hiai/update-prices.test.mjs",
+    "prices:check": "node scripts/hiai/update-prices.mjs --check --catalog public/catalog-v3.json --report public/pricing-update-report.json",
+    "prices:update": "node scripts/hiai/update-prices.mjs --write --allow-partial --catalog public/catalog-v3.json --report public/pricing-update-report.json"
+  }
+}

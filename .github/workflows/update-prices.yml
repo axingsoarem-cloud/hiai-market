@@ -1,0 +1,84 @@
+name: Update official reference prices
+
+on:
+  schedule:
+    - cron: '0 1 * * *' # 每天北京时间 09:00；GitHub 调度可能延迟。
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hiai-market-official-prices-main
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test exact model and price safeguards
+        run: node --test scripts/hiai/update-prices.test.mjs
+      - name: Refresh public price catalog
+        id: refresh
+        run: node scripts/hiai/update-prices.mjs --write --allow-partial --catalog public/catalog-v3.json --report public/pricing-update-report.json
+      - name: Summarize source coverage and failures
+        if: always()
+        shell: bash
+        env:
+          REFRESH_OUTCOME: ${{ steps.refresh.outcome }}
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          if (process.env.REFRESH_OUTCOME !== 'success') {
+            console.log('::warning title=Refresh did not complete::Tests or refresh failed; an existing committed report is not evidence for this run.');
+            fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, '### 官方价格更新\n本次更新未完成，已有报告可能属于上一次运行，不能用于证明本次通过。\n');
+            process.exit(0);
+          }
+          const file = 'public/pricing-update-report.json';
+          if (!fs.existsSync(file)) {
+            console.log('::warning title=Price report unavailable::No price report was produced; this run is not verified.');
+            fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, '### 官方价格更新\n本次未生成报告，请检查前序步骤。\n');
+            process.exit(0);
+          }
+          const report = JSON.parse(fs.readFileSync(file, 'utf8'));
+          const counts = report.counts || {};
+          const failures = (report.sources || []).filter(source => source.status !== 'ok');
+          if (report.status !== 'ok') console.log('::warning title=Partial official price refresh::Some official sources could not be verified. Previous prices and verification times were retained; see the run summary.');
+          const lines = ['### 官方价格更新', `- 状态：${report.status}`, `- 检查时间：${report.checkedAt}`, `- 自动更新：${counts.updated ?? 0}；保留：${counts.retained ?? 0}；未纳入自动适配：${counts.unsupported ?? 0}`, ...failures.map(source => `- 来源失败：${source.id} — ${String(source.error).replace(/[\r\n|]/g, ' ')}`), '- partial 不等于全部来源验证通过。', '- 线上写入及读回结果见 Publish verified catalog 步骤；来源 partial 不会被隐藏。', ''];
+          fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, lines.join('\n'));
+          NODE
+      - name: Publish verified catalog to HiAi price storage
+        env:
+          HIAI_SITE_URL: https://hiai.oss.baiopen.com
+          HIAI_PRICE_UPDATE_TOKEN: ${{ secrets.HIAI_PRICE_UPDATE_TOKEN }}
+          HIAI_SITE_BYPASS_TOKEN: ${{ secrets.HIAI_SITE_BYPASS_TOKEN }}
+        run: node scripts/hiai/publish-prices.mjs public
+      - name: Commit only catalog data and refresh report
+        shell: bash
+        run: |
+          git add -- public/catalog-v3.json public/catalog-v3.js public/pricing-update-report.json
+          if git diff --cached --quiet; then
+            echo 'No catalog changes to commit.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'data: refresh official reference prices'
+          git push origin HEAD:main
+      - name: Package static site for deployment handoff
+        uses: actions/upload-artifact@v4
+        with:
+          name: hiai-market-static-${{ github.run_id }}
+          path: public/
+          if-no-files-found: error
+          retention-days: 7

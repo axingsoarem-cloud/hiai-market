@@ -61,8 +61,7 @@ jobs:
         id: publish_config
         env:
           HIAI_PRICE_UPDATE_TOKEN: ${{ secrets.HIAI_PRICE_UPDATE_TOKEN }}
-          HIAI_SITE_BYPASS_TOKEN: ${{ secrets.HIAI_SITE_BYPASS_TOKEN }}
-        run: node -e "require('fs').appendFileSync(process.env.GITHUB_OUTPUT, 'configured=' + Boolean(process.env.HIAI_PRICE_UPDATE_TOKEN && process.env.HIAI_SITE_BYPASS_TOKEN) + '\\n')"
+        run: node -e "require('fs').appendFileSync(process.env.GITHUB_OUTPUT, 'configured=' + Boolean(process.env.HIAI_PRICE_UPDATE_TOKEN) + '\\n')"
       - name: Record pending site publication
         if: steps.publish_config.outputs.configured != 'true'
         run: |
@@ -73,7 +72,6 @@ jobs:
         env:
           HIAI_SITE_URL: https://hiai.oss.baiopen.com
           HIAI_PRICE_UPDATE_TOKEN: ${{ secrets.HIAI_PRICE_UPDATE_TOKEN }}
-          HIAI_SITE_BYPASS_TOKEN: ${{ secrets.HIAI_SITE_BYPASS_TOKEN }}
         run: node scripts/hiai/publish-prices.mjs public
       - name: Commit only catalog data and refresh report
         shell: bash

@@ -57,7 +57,19 @@ jobs:
           const lines = ['### 官方价格更新', `- 状态：${report.status}`, `- 检查时间：${report.checkedAt}`, `- 自动更新：${counts.updated ?? 0}；保留：${counts.retained ?? 0}；未纳入自动适配：${counts.unsupported ?? 0}`, ...failures.map(source => `- 来源失败：${source.id} — ${String(source.error).replace(/[\r\n|]/g, ' ')}`), '- partial 不等于全部来源验证通过。', '- 线上写入及读回结果见 Publish verified catalog 步骤；来源 partial 不会被隐藏。', ''];
           fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, lines.join('\n'));
           NODE
+      - name: Check publishing credentials without exposing values
+        id: publish_config
+        env:
+          HIAI_PRICE_UPDATE_TOKEN: ${{ secrets.HIAI_PRICE_UPDATE_TOKEN }}
+          HIAI_SITE_BYPASS_TOKEN: ${{ secrets.HIAI_SITE_BYPASS_TOKEN }}
+        run: node -e "require('fs').appendFileSync(process.env.GITHUB_OUTPUT, 'configured=' + Boolean(process.env.HIAI_PRICE_UPDATE_TOKEN && process.env.HIAI_SITE_BYPASS_TOKEN) + '\\n')"
+      - name: Record pending site publication
+        if: steps.publish_config.outputs.configured != 'true'
+        run: |
+          echo '::warning title=Site publication pending::Dedicated encrypted credentials are not configured. Repository prices can refresh, but the website was not updated.'
+          echo '### 线上写入待配置：本次仅更新仓库价格；网站未同步。' >> "$GITHUB_STEP_SUMMARY"
       - name: Publish verified catalog to HiAi price storage
+        if: steps.publish_config.outputs.configured == 'true'
         env:
           HIAI_SITE_URL: https://hiai.oss.baiopen.com
           HIAI_PRICE_UPDATE_TOKEN: ${{ secrets.HIAI_PRICE_UPDATE_TOKEN }}

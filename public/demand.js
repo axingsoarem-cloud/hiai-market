@@ -5,13 +5,12 @@ const key='hiai-review-demands';
 const sourceTypes={official:'官方',cloud:'云平台',aggregator:'聚合平台',custom:'自定义'};
 const supplySources=(Array.isArray(window.HIAI_SUPPLY_SOURCES)?window.HIAI_SUPPLY_SOURCES:[]).filter(x=>x&&typeof x.id==='string'&&x.id!=='custom'&&typeof x.name==='string'&&x.name.trim()&&x.name.length<=80&&['official','cloud','aggregator'].includes(x.type));
 const isModelProduct=value=>['模型 API','模型预置吞吐量'].includes(value);
-const productLabel=value=>value==='GPU 算力'?'GPU云服务器':value;
+const productLabel=value=>value==='GPU 算力'?'历史分类 · GPU（已下架）':value;
 function sourceLabel(d){return typeof d.sourceName==='string'&&d.sourceName.trim()&&d.sourceName.length<=80?d.sourceName:'未填写'}
 const families=Array.isArray(window.HIAI_CATALOG?.families)?window.HIAI_CATALOG.families:[];
 const firstFamily=families.find(f=>f.versions?.length), firstVersion=firstFamily?.versions[0];
 const seeds=[
  {id:'seed-buy-api',kind:'buy',product:'模型 API',title:'为客服助手寻找模型 API 方案',family:firstFamily?.family||'待确认',version:firstVersion?.version||'待确认',modelId:firstVersion?.modelId||'',spec:'每月 1000 万输入 tokens · 中文问答',budget:'500 / 月',region:'亚太',description:'演示采购计划：需要配置建议，实际可供、价格与服务条件待确认。',contact:'演示采购团队',date:'示例'},
- {id:'seed-sell-gpu',kind:'sell',product:'GPU 算力',title:'80GB GPU 实例合作供应意向',spec:'单卡 80GB · 按小时或包月',budget:'面议',region:'欧洲',description:'演示供给信息，库存、交付和报价需单独确认。',contact:'演示算力供应商',date:'示例'},
  {id:'seed-buy-app',kind:'buy',product:'软件订阅',title:'采购研发团队 AI 编程工具',spec:'20 席位 · 月度订阅',budget:'1000 / 月',region:'亚太',description:'需要团队授权、统一账单和使用指引。品牌与套餐可协商。',contact:'演示研发团队',date:'示例'}
 ];
 let localDemands=[],rawRecords=[],loadedValue=null,storageReadable=true,demandTab='all',toastTimer;
@@ -43,7 +42,7 @@ function productChanged(){
  for(const id of ['demandFamily','demandVersion']){$('#'+id).disabled=!api;$('#'+id).required=api}
  $('#demandFamily').innerHTML=api?'<option value="">请选择模型系列</option>'+families.map(f=>`<option value="${esc(f.id)}">${esc(f.family)}</option>`).join(''):'<option value="">不适用</option>';
  if(api)versions();else $('#demandVersion').innerHTML='<option value="">不适用</option>';
- $('#modelHint').textContent=api?(families.length?'模型和版本来自当前目录；用量、并发和交付要求请填写在规格描述中。':'模型目录未能载入，请刷新后重试；GPU 和软件订阅仍可发布。'):'GPU云服务器和软件订阅无需模型字段。请在规格描述中填写显存、实例、软件名称或席位要求。';
+ $('#modelHint').textContent=api?(families.length?'模型和版本来自当前目录；用量、并发和交付要求请填写在规格描述中。':'模型目录未能载入，请刷新后重试；软件订阅仍可发布。'):'软件订阅无需模型字段。请在规格描述中填写软件名称、套餐或席位要求。';
 }
 function sourceChanged(){const custom=$('#demandSource').value==='custom';$('#customSourceField').hidden=!custom;$('#demandSourceName').disabled=!custom;$('#demandSourceName').required=custom;$('#demandSourceName').setCustomValidity('')}
 function initSources(){$('#demandSource').innerHTML='<option value="">未指定供应源</option>'+supplySources.map(x=>'<option value="'+esc(x.id)+'">'+esc(x.name)+' · '+esc(sourceTypes[x.type])+'</option>').join('')+'<option value="custom">自定义供应源…</option>';sourceChanged()}

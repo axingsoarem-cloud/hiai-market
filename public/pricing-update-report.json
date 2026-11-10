@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-09T07:39:51.562Z",
+  "checkedAt": "2026-11-10T07:59:44.970Z",
   "status": "partial",
   "schedule": "每天北京时间09:00（UTC 01:00）",
   "sources": [
@@ -8,7 +8,7 @@
       "status": "ok",
       "models": 1,
       "sourceUrl": "https://api-docs.deepseek.com/quick_start/pricing/",
-      "evidenceHash": "af6679690eb9a7838c47727bfc5ffdc4ac91c4445a0c1219741ffe00c076ece5"
+      "evidenceHash": "027bba6c9e038c25b3cb760ef9f2c803f1325489ebb28c57a97947041033789b"
     },
     {
       "id": "zai",

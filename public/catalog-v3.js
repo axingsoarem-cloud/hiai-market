@@ -168,11 +168,11 @@ window.HIAI_CATALOG = {
             "unit": "百万 tokens",
             "currency": "USD",
             "sourceUrl": "https://api-docs.deepseek.com/quick_start/pricing/",
-            "updatedAt": "2026-11-16T07:39:35.298Z",
-            "checkedAt": "2026-11-16T07:39:35.298Z",
+            "updatedAt": "2026-11-17T08:48:32.974Z",
+            "checkedAt": "2026-11-17T08:48:32.974Z",
             "status": "verified",
             "method": "official-source-parser",
-            "evidenceHash": "5126b5f69e78f6dacb0a8bfc91e0cf0b705416b0b918b12e1f45f66b122e7741"
+            "evidenceHash": "5efd7e7661de5b86a1a3d5569ea5d9d8633bf1ca1c311ec42baace85ef18d78e"
           },
           "officialPlaygroundUrl": null,
           "officialPlaygroundScope": null,
@@ -347,8 +347,8 @@ window.HIAI_CATALOG = {
             "unit": "百万 tokens",
             "currency": "USD",
             "sourceUrl": "https://docs.z.ai/guides/overview/pricing",
-            "updatedAt": "2026-11-16T07:39:35.298Z",
-            "checkedAt": "2026-11-16T07:39:35.298Z",
+            "updatedAt": "2026-11-17T08:48:32.974Z",
+            "checkedAt": "2026-11-17T08:48:32.974Z",
             "status": "verified",
             "method": "official-source-parser",
             "evidenceHash": "4ee3a3e9eab6eab9d8a06309fe6984d82db7351586786bb8422deee1f16f78bf"
@@ -593,7 +593,7 @@ window.HIAI_CATALOG = {
             "method": "official-page-manual-verification",
             "tier": "Standard；Short context（以官方档位定义为准）",
             "note": "仅基础输入/输出价格，缓存、工具、特殊模态及其他档位另计。",
-            "checkedAt": "2026-11-16T07:39:35.298Z",
+            "checkedAt": "2026-11-17T08:48:32.974Z",
             "lastError": "未取得同型号、同档位官方价格；保留已有价格及其核验时间。"
           },
           "officialPlaygroundUrl": "https://platform.openai.com/playground",
@@ -660,7 +660,7 @@ window.HIAI_CATALOG = {
             "method": "official-page-manual-verification",
             "tier": "Standard；Short context（以官方档位定义为准）",
             "note": "仅基础输入/输出价格，缓存、工具、特殊模态及其他档位另计。",
-            "checkedAt": "2026-11-16T07:39:35.298Z",
+            "checkedAt": "2026-11-17T08:48:32.974Z",
             "lastError": "未取得同型号、同档位官方价格；保留已有价格及其核验时间。"
           },
           "officialPlaygroundUrl": "https://platform.openai.com/playground",
@@ -794,7 +794,7 @@ window.HIAI_CATALOG = {
             "method": "official-page-manual-verification",
             "tier": "Standard；Global",
             "note": "仅基础输入/输出价格，缓存、工具、特殊模态及其他档位另计。",
-            "checkedAt": "2026-11-16T07:39:35.298Z",
+            "checkedAt": "2026-11-17T08:48:32.974Z",
             "lastError": "未取得同型号、同档位官方价格；保留已有价格及其核验时间。"
           },
           "officialPlaygroundUrl": "https://platform.claude.com/playground",
@@ -853,7 +853,7 @@ window.HIAI_CATALOG = {
             "method": "official-page-manual-verification",
             "tier": "Standard；Global",
             "note": "仅基础输入/输出价格，缓存、工具、特殊模态及其他档位另计。",
-            "checkedAt": "2026-11-16T07:39:35.298Z",
+            "checkedAt": "2026-11-17T08:48:32.974Z",
             "lastError": "未取得同型号、同档位官方价格；保留已有价格及其核验时间。"
           },
           "officialPlaygroundUrl": "https://platform.claude.com/playground",
@@ -1688,7 +1688,7 @@ window.HIAI_CATALOG = {
             "method": "official-page-manual-verification",
             "tier": "Standard",
             "note": "仅基础输入/输出价格，缓存、工具、特殊模态及其他档位另计。",
-            "checkedAt": "2026-11-16T07:39:35.298Z",
+            "checkedAt": "2026-11-17T08:48:32.974Z",
             "lastError": "未取得同型号、同档位官方价格；保留已有价格及其核验时间。"
           },
           "officialPlaygroundUrl": "https://console.x.ai/team/default/chat?model=grok-4.7",
